@@ -3,78 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>오늘의 LCK — 고객 지원</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0b0e19;
-      color: #e0e4f0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 60px 24px;
-    }
-    .logo { font-size: 48px; margin-bottom: 16px; }
-    h1 { font-size: 28px; font-weight: 700; color: #07cccc; margin-bottom: 8px; }
-    .subtitle { font-size: 16px; color: #7a8099; margin-bottom: 48px; }
-    .card {
-      background: #141828;
-      border: 1px solid #1e2438;
-      border-radius: 16px;
-      padding: 32px;
-      max-width: 540px;
-      width: 100%;
-      margin-bottom: 16px;
-    }
-    .card h2 { font-size: 18px; font-weight: 600; color: #07cccc; margin-bottom: 12px; }
-    .card p { font-size: 15px; color: #9aa0b8; line-height: 1.7; }
-    .card a { color: #07cccc; text-decoration: none; }
-    .card a:hover { text-decoration: underline; }
-    .footer {
-      margin-top: 48px;
-      font-size: 13px;
-      color: #4a5068;
-      text-align: center;
-    }
-    .footer a { color: #5a6080; text-decoration: none; }
-    .footer a:hover { color: #07cccc; }
-  </style>
+  <meta name="description" content="Today’s LCK 공식 지원 페이지입니다. 앱 기능, 문의 방법, 개인정보 처리방침 및 데이터 삭제 안내를 확인할 수 있습니다." />
+  <meta name="theme-color" content="#f6f2e9" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#111522" media="(prefers-color-scheme: dark)" />
+  <title>Today’s LCK — 지원</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/haramchae0217/todays-lck/main/assets/icon/app_icon.png" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="logo">🎮</div>
-  <h1>오늘의 LCK</h1>
-  <p class="subtitle">LCK 경기 일정 &amp; 승부예측 앱</p>
+  <main class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Today’s LCK 홈">
+        <img
+          class="brand-icon"
+          src="https://raw.githubusercontent.com/haramchae0217/todays-lck/main/assets/icon/app_icon.png"
+          alt="Today’s LCK 앱 아이콘"
+          width="48"
+          height="48"
+        />
+        <span>Today’s LCK</span>
+      </a>
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="privacy.html">개인정보 처리방침</a>
+        <a href="data-deletion.html">데이터 삭제</a>
+      </nav>
+    </header>
 
-  <div class="card">
-    <h2>문의하기</h2>
-    <p>
-      앱 사용 중 문제가 발생하거나 개선 사항이 있으시면 아래 이메일로 연락주세요.<br /><br />
-      <a href="mailto:haramchae0217@gmail.com">haramchae0217@gmail.com</a>
-    </p>
-  </div>
+    <section class="hero">
+      <p class="eyebrow">Official Support</p>
+      <h1>LCK와 주요 국제대회를 더 빠르고 편하게.</h1>
+      <p class="hero-copy">
+        Today’s LCK는 LCK와 주요 국제대회의 일정, 결과, 순위, 승부예측, 대진표,
+        팀·선수 정보와 스토브리그 소식을 한곳에서 확인할 수 있도록 제공하는 앱입니다.
+      </p>
+      <div class="button-row">
+        <a class="button" href="mailto:haramchae0217@gmail.com">이메일 문의</a>
+        <a class="button secondary" href="privacy.html">개인정보 처리방침</a>
+      </div>
+    </section>
 
-  <div class="card">
-    <h2>주요 기능</h2>
-    <p>
-      📅 LCK 경기 일정 및 실시간 결과<br />
-      🏆 팀 순위표 &amp; 역대 시즌 기록<br />
-      🎯 승부예측 &amp; 리더보드<br />
-      💬 경기별 팬 커뮤니티
-    </p>
-  </div>
+    <section class="grid" aria-label="지원 정보">
+      <article class="card card-wide">
+        <h2>주요 기능</h2>
+        <ul class="feature-list">
+          <li>LCK 및 주요 국제대회 일정과 경기 결과</li>
+          <li>리그 순위와 대진표</li>
+          <li>승부예측</li>
+          <li>팀 및 선수 정보</li>
+          <li>스토브리그 정보</li>
+          <li>홈 화면 위젯과 경기 알림</li>
+        </ul>
+      </article>
 
-  <div class="card">
-    <h2>개인정보 처리방침</h2>
-    <p>
-      앱의 개인정보 수집 및 처리 방식에 대해서는
-      <a href="privacy.html">개인정보 처리방침</a>을 확인해주세요.
-    </p>
-  </div>
+      <article class="card">
+        <h2>문의 및 지원</h2>
+        <p>
+          앱 사용 중 문제가 발생했거나 개선 의견이 있다면 아래 이메일로 문의해주세요.
+        </p>
+        <p><a href="mailto:haramchae0217@gmail.com">haramchae0217@gmail.com</a></p>
+      </article>
 
-  <div class="footer">
-    <p>© 2026 Chan Wook Jeong &nbsp;·&nbsp; <a href="privacy.html">개인정보 처리방침</a></p>
-  </div>
+      <article class="card">
+        <h2>개인정보 처리방침</h2>
+        <p>
+          Today’s LCK가 어떤 정보를 어떤 목적으로 처리하는지, Firebase 및 Meta/Instagram 연동 시
+          어떤 데이터가 사용될 수 있는지 확인할 수 있습니다.
+        </p>
+        <p><a href="privacy.html">개인정보 처리방침 보기 →</a></p>
+      </article>
+
+      <article class="card">
+        <h2>데이터 삭제 요청</h2>
+        <p>
+          앱 계정 정보 또는 Instagram 댓글 자동응답과 관련된 운영 기록의 삭제를 요청하는 방법을 안내합니다.
+        </p>
+        <p><a href="data-deletion.html">삭제 요청 방법 보기 →</a></p>
+      </article>
+
+      <article class="card">
+        <h2>Instagram 자동응답</h2>
+        <p>
+          Today’s LCK가 운영하는 특정 Instagram 게시물에서 안내된 키워드를 댓글로 남긴 경우,
+          Meta가 제공하는 공식 Private Reply API를 통해 해당 요청에 대한 자동응답이 발송될 수 있습니다.
+        </p>
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      <div>© 2026 Today’s LCK · 운영자 Chan Wook Jeong</div>
+      <div class="footer-links">
+        <a href="mailto:haramchae0217@gmail.com">문의</a>
+        <a href="privacy.html">개인정보 처리방침</a>
+        <a href="data-deletion.html">데이터 삭제 요청</a>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
