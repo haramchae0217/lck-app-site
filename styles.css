@@ -14,7 +14,7 @@
   --radius-lg: 24px;
   --radius-md: 18px;
   --radius-sm: 14px;
-  --content: 860px;
+  --content: 820px;
 }
 
 * {
@@ -63,7 +63,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  margin-bottom: 44px;
+  margin-bottom: 40px;
 }
 
 .brand {
@@ -83,7 +83,9 @@ img {
 .brand-icon {
   width: 48px;
   height: 48px;
+  object-fit: cover;
   border-radius: 13px;
+  background: var(--surface-strong);
   box-shadow: 0 8px 22px rgba(23, 34, 59, 0.12);
 }
 
@@ -104,7 +106,7 @@ img {
 }
 
 .eyebrow {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   color: var(--red);
   font-size: 13px;
   font-weight: 800;
@@ -131,8 +133,8 @@ img {
 
 .hero-copy,
 .page-intro {
-  max-width: 700px;
-  margin: 18px 0 0;
+  max-width: 680px;
+  margin: 20px 0 0;
   color: var(--muted);
   font-size: 17px;
 }
@@ -144,6 +146,33 @@ img {
   margin-top: 18px;
   color: var(--muted);
   font-size: 14px;
+}
+
+.integration-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.integration-summary > div {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 14px 16px;
+  box-shadow: 0 10px 28px rgba(40, 47, 65, 0.05);
+}
+
+.integration-summary strong {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.integration-summary span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 .grid {
@@ -174,7 +203,7 @@ img {
 
 .card h2,
 .policy-section h2 {
-  margin: 0 0 12px;
+  margin: 0 0 14px;
   color: var(--navy);
   line-height: 1.35;
   letter-spacing: -0.025em;
@@ -192,6 +221,12 @@ img {
 .policy-section th {
   color: var(--muted);
   font-size: 15px;
+}
+
+.policy-section p,
+.policy-section li,
+.policy-section td {
+  line-height: 1.78;
 }
 
 .card p:last-child,
@@ -251,7 +286,7 @@ img {
 .back-link {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   color: var(--muted);
   font-size: 14px;
   font-weight: 650;
@@ -265,11 +300,11 @@ img {
 .policy-stack {
   display: grid;
   gap: 16px;
-  margin-top: 32px;
+  margin-top: 36px;
 }
 
 .policy-section {
-  padding: 28px;
+  padding: 30px;
   border-radius: var(--radius-lg);
 }
 
@@ -285,21 +320,21 @@ img {
 
 .table-wrap {
   overflow-x: auto;
-  margin-top: 14px;
+  margin-top: 16px;
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
 }
 
 table {
   width: 100%;
-  min-width: 620px;
+  min-width: 640px;
   border-collapse: collapse;
   background: var(--surface-strong);
 }
 
 th,
 td {
-  padding: 14px 16px;
+  padding: 16px 18px;
   text-align: left;
   vertical-align: top;
   border-bottom: 1px solid var(--line);
@@ -315,12 +350,13 @@ tr:last-child td {
 }
 
 .notice {
-  margin-top: 16px;
+  margin-top: 18px;
   padding: 18px 20px;
   border-left: 4px solid var(--red);
   border-radius: var(--radius-md);
   color: var(--muted);
   font-size: 14px;
+  line-height: 1.72;
 }
 
 .notice strong {
@@ -383,6 +419,10 @@ strong {
     font-size: 16px;
   }
 
+  .integration-summary {
+    grid-template-columns: 1fr;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
@@ -395,6 +435,11 @@ strong {
   .policy-section {
     padding: 22px;
     border-radius: 20px;
+  }
+
+  th,
+  td {
+    padding: 14px 15px;
   }
 }
 
